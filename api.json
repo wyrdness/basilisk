@@ -1,0 +1,343 @@
+{
+  "category": "MYTHOLOGICAL_CREATURE",
+
+  "meta": {
+    "version": "1.0.0",
+    "schema_version": "1.0.0",
+    "last_updated": "2026-01-14",
+    "repository": "https://github.com/wyrdness/basilisk",
+    "maintainers": [
+      {
+        "name": "Wyrdness Team",
+        "github": "wyrdness",
+        "role": "maintainer"
+      }
+    ],
+    "license": {
+      "data": "CC0-1.0",
+      "content": "CC-BY-4.0"
+    }
+  },
+
+  "phenomenon": {
+    "id": "basilisk",
+    "name": "Basilisk",
+    "aliases": [
+      {
+        "name": "King of Serpents",
+        "meaning": "Title from crown-like crest"
+      },
+      {
+        "name": "Cockatrice",
+        "meaning": "Later medieval conflation with rooster-headed variant"
+      }
+    ],
+    "category": "MYTHOLOGICAL_CREATURE",
+    "subcategory": "Serpent",
+    "tags": [
+      "mythological",
+      "serpent",
+      "reptilian",
+      "deadly-gaze",
+      "european",
+      "medieval",
+      "poison"
+    ],
+    "status": "mythological",
+    "description": {
+      "summary": "The 'King of Serpents' - legendary reptile with deadly gaze and poisonous breath, capable of killing with a single look.",
+      "full": "The basilisk is a legendary reptile reputed to be the king of serpents, whose gaze or breath is lethally poisonous. In European tradition, it was described as a small snake with a crown-like crest on its head. Medieval accounts transformed it into a creature with a rooster's head and serpent's tail, often conflated with the cockatrice. The basilisk's powers include a deadly gaze that turns victims to stone or kills instantly, poisonous breath that withers all vegetation, and the ability to split rocks. First described by Pliny the Elder in the 1st century CE as a North African serpent, the basilisk likely originated from exaggerated accounts of cobras (whose hoods resemble crowns) combined with fear of venomous snakes. The creature appears prominently in medieval bestiaries and modern fantasy, most famously in Harry Potter."
+    },
+    "etymology": {
+      "origin": "From Greek 'basiliskos' (βασιλίσκος) meaning 'little king', diminutive of 'basileus' (king), referring to the crown-like crest",
+      "meaning": "Little king",
+      "first_use": "Ancient Greece, popularized by Pliny the Elder (1st century CE)"
+    }
+  },
+
+  "classification": {
+    "taxonomy": {
+      "category": "MYTHOLOGICAL_CREATURE",
+      "type": "Serpent",
+      "subtype": "Venomous",
+      "variant": "European"
+    },
+    "related_phenomena": [
+      {
+        "id": "cockatrice",
+        "name": "Cockatrice",
+        "relationship": "conflated",
+        "description": "Rooster-headed serpent, often confused with basilisk"
+      },
+      {
+        "id": "gorgon",
+        "name": "Gorgon",
+        "relationship": "similar",
+        "description": "Shares deadly gaze power (petrification)"
+      },
+      {
+        "id": "dragon",
+        "name": "Dragon",
+        "relationship": "related",
+        "description": "King of serpents, serpent-dragon connection"
+      }
+    ]
+  },
+
+  "characteristics": {
+    "physical": {
+      "classical_description": {
+        "appearance": "Small snake with crown-like white spot or crest on head",
+        "size": "Less than 12 inches (Pliny's account)",
+        "features": [
+          "Crown-like crest or white marking",
+          "Serpent body",
+          "Yellow/golden coloring"
+        ]
+      },
+      "medieval_description": {
+        "appearance": "Rooster head, serpent tail, sometimes dragon wings",
+        "size": "Variable, often chicken-sized",
+        "features": [
+          "Rooster head with crown or comb",
+          "Serpent/dragon body",
+          "Sometimes wings",
+          "Sometimes depicted with eight legs"
+        ]
+      },
+      "coloration": [
+        "yellow",
+        "gold",
+        "greenish"
+      ]
+    },
+    "abilities": [
+      {
+        "ability": "Deadly gaze",
+        "description": "Gaze turns victims to stone or kills instantly",
+        "frequency": "primary power",
+        "evidence_level": "mythological"
+      },
+      {
+        "ability": "Poisonous breath",
+        "description": "Breath kills all living things, withers vegetation",
+        "frequency": "primary power",
+        "evidence_level": "mythological"
+      },
+      {
+        "ability": "Rock splitting",
+        "description": "Able to split rocks with its presence or breath",
+        "frequency": "legendary",
+        "evidence_level": "mythological"
+      },
+      {
+        "ability": "Extreme venom",
+        "description": "Touch or proximity causes death; venom travels up weapons",
+        "frequency": "legendary",
+        "evidence_level": "mythological"
+      }
+    ],
+    "birth_myth": {
+      "method": "Hatched by serpent or toad from egg laid by rooster (male chicken)",
+      "variations": [
+        "Rooster egg hatched by toad",
+        "Rooster egg hatched by serpent",
+        "Egg laid during dog days of summer under Sirius"
+      ]
+    },
+    "weaknesses": [
+      {
+        "weakness": "Weasel",
+        "description": "The weasel is the basilisk's natural enemy; its odor is fatal to basilisk",
+        "source": "Pliny the Elder"
+      },
+      {
+        "weakness": "Rooster's crow",
+        "description": "The crow of a rooster is fatal to the basilisk",
+        "source": "Medieval bestiaries"
+      },
+      {
+        "weakness": "Own reflection",
+        "description": "Seeing its own reflection in a mirror kills the basilisk",
+        "source": "Medieval tradition"
+      }
+    ]
+  },
+
+  "distribution": {
+    "range": {
+      "description": "Mythological accounts from medieval Europe, classical origins in North Africa",
+      "regions": [
+        "North Africa (classical accounts)",
+        "Medieval Europe",
+        "Libya (Pliny's Cyrenaica)"
+      ]
+    },
+    "temporal": {
+      "first_recorded": {
+        "date": "1st century CE",
+        "circa": false,
+        "source": "Pliny the Elder, Natural History"
+      },
+      "peak_activity_periods": [
+        {
+          "period": "Medieval Period",
+          "description": "Height of basilisk mythology in European bestiaries"
+        }
+      ]
+    }
+  },
+
+  "history": {
+    "origins": {
+      "cultural_roots": "Ancient Greek and Roman natural histories, likely based on exaggerated cobra accounts (hood resembles crown)",
+      "earliest_accounts": "Pliny the Elder (1st century CE) describing North African serpent",
+      "folklore_connections": "Connected to serpent mythology, Gorgon legends (deadly gaze), medieval bestiaries"
+    },
+    "timeline": [
+      {
+        "date": "1st century CE",
+        "event": "Pliny the Elder's description",
+        "significance": "First detailed Western account in Natural History",
+        "source": "Natural History, Book VIII"
+      },
+      {
+        "date": "Medieval Period",
+        "event": "Bestiary inclusion",
+        "significance": "Basilisk becomes prominent in medieval bestiaries with moral lessons",
+        "source": "Medieval bestiaries"
+      },
+      {
+        "date": "Medieval Period",
+        "event": "Cockatrice conflation",
+        "significance": "Basilisk merged with cockatrice myth, gaining rooster characteristics",
+        "source": "Medieval literature"
+      },
+      {
+        "date": "Renaissance",
+        "event": "Heraldic use",
+        "significance": "Basilisk appears in European heraldry",
+        "source": "Heraldic records"
+      }
+    ],
+    "modern_era": "Basilisk remains popular in fantasy literature and games. Most famous modern appearance in Harry Potter series (giant serpent in Chamber of Secrets)."
+  },
+
+  "famous_legends": [
+    {
+      "name": "Basilisk of Vienna",
+      "location": "Vienna, Austria",
+      "date": "1212",
+      "description": "Legend of basilisk in well, killed by showing it a mirror",
+      "source": "Local legend"
+    },
+    {
+      "name": "Warsaw Basilisk",
+      "location": "Warsaw, Poland",
+      "date": "Medieval",
+      "description": "Basilisk in cellars of Old Town, appears in city's coat of arms",
+      "source": "Local legend"
+    }
+  ],
+
+  "evidence": {
+    "historical": [
+      {
+        "type": "ancient descriptions",
+        "name": "Classical texts",
+        "description": "Pliny the Elder and other Roman natural historians",
+        "status": "mythological",
+        "analysis": "Likely exaggerated cobra accounts; hood resembles crown"
+      }
+    ]
+  },
+
+  "theories": {
+    "mythological": [
+      {
+        "name": "Deadly gaze archetype",
+        "description": "Basilisk represents universal fear of deadly serpents and 'evil eye'",
+        "proponents": ["Folklorists"],
+        "evidence_cited": ["Gorgon parallels", "Evil eye traditions", "Universal serpent fear"]
+      }
+    ],
+    "historical_basis": [
+      {
+        "name": "Cobra misidentification",
+        "description": "Based on Egyptian/North African cobras whose hoods resemble crowns",
+        "proponents": ["Historians", "Herpetologists"],
+        "evidence_cited": [
+          "Cobra hood resembles crown",
+          "Geographic origin (North Africa)",
+          "Deadly venom matches description",
+          "Pliny's description fits cobra"
+        ]
+      },
+      {
+        "name": "Viper exaggeration",
+        "description": "Exaggerated accounts of European vipers",
+        "proponents": ["Medieval scholars"],
+        "evidence_cited": ["Local viper species", "Fear-based exaggeration"]
+      }
+    ]
+  },
+
+  "cultural": {
+    "symbolism": {
+      "primary": [
+        "Evil and sin",
+        "Death",
+        "The Devil (Christian tradition)",
+        "Corruption and poison"
+      ],
+      "heraldic": "Deadly power, protection through fear"
+    },
+    "popular_culture": {
+      "literature": [
+        "Harry Potter and the Chamber of Secrets by J.K. Rowling (giant basilisk)",
+        "The Chronicles of Narnia by C.S. Lewis",
+        "Various fantasy novels"
+      ],
+      "film_tv": [
+        "Harry Potter and the Chamber of Secrets (2002)",
+        "Various fantasy films"
+      ],
+      "games": [
+        "Dungeons & Dragons",
+        "Dark Souls series",
+        "The Witcher series"
+      ],
+      "heraldry": [
+        "Various European family crests",
+        "City symbols (Warsaw, Poland)"
+      ]
+    }
+  },
+
+  "sources": [
+    {
+      "id": "pliny-natural",
+      "type": "ancient text",
+      "title": "Natural History, Book VIII",
+      "authors": ["Pliny the Elder"],
+      "date": "77 CE"
+    },
+    {
+      "id": "white-bestiary",
+      "type": "book",
+      "title": "The Book of Beasts: Being a Translation from a Latin Bestiary of the Twelfth Century",
+      "authors": ["T.H. White"],
+      "publication": "Jonathan Cape",
+      "date": "1954"
+    },
+    {
+      "id": "rowling-chamber",
+      "type": "book",
+      "title": "Harry Potter and the Chamber of Secrets",
+      "authors": ["J.K. Rowling"],
+      "publication": "Bloomsbury",
+      "date": "1998",
+      "isbn": "978-0439064873"
+    }
+  ]
+}
