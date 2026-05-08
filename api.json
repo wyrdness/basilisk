@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/basilisk",
     "maintainers": [
       {
@@ -16,72 +16,148 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "basilisk",
     "name": "Basilisk",
-    "aliases": [],
+    "aliases": [
+      { "name": "Basiliskos", "language": "Ancient Greek", "meaning": "Little king" },
+      { "name": "Regulus", "language": "Latin", "meaning": "Little king" },
+      { "name": "Cockatrice", "region": "Medieval Western Europe", "meaning": "Conflated with the basilisk in late medieval and early modern usage" }
+    ],
     "category": "MYTHOLOGICAL_CREATURE",
-    "subcategory": "Venomous",
+    "subcategory": "Venomous serpent / king of serpents",
     "tags": [
+      "serpent",
+      "venomous",
       "folklore",
-      "mythology"
+      "mythology",
+      "europe",
+      "north-africa",
+      "medieval-bestiary",
+      "petrification"
     ],
     "status": "documented",
     "description": {
-      "summary": "The basilisk is a legendary reptile reputed to be the king of serpents, whose gaze or breath is lethally poisonous.",
-      "full": "The basilisk is a legendary reptile reputed to be the king of serpents, whose gaze or breath is lethally poisonous. In European tradition, it was described as a small snake with a crown-like crest on its head. Medieval accounts transformed it into a creature with a rooster's head and serpent's tail, often conflated with the cockatrice. The basilisk's powers include a deadly gaze that turns victims to stone or kills instantly, poisonous breath that withers all vegetation, and the ability to split rocks. First described by Pliny the Elder in the 1st century CE as a North African serpent, the basilisk likely originated from exaggerated accounts of cobras (whose hoods resemble crowns) combined with fear of venomous snakes."
+      "summary": "A legendary reptile of classical and medieval European tradition, often called the king of serpents, with a lethal gaze, lethal breath, or both. Originally described by Pliny the Elder as a small Cyrenaican snake; later conflated with the cockatrice.",
+      "full": "The basilisk is a legendary venomous serpent of classical Greco-Roman natural history that, through the medieval bestiary tradition, became the most feared creature of European folklore. Pliny the Elder, in his Natural History (c. 79 CE), described it as a small snake of Cyrene (modern Libya), no more than twelve fingers long, distinguished by a crown-like white mark on its head and able to kill with its breath, gaze, or even by being touched indirectly through a weapon. In the medieval period it was progressively conflated with the cockatrice and depicted as a creature with the head and legs of a rooster and the tail of a serpent, hatched from a yolkless cock's egg incubated by a toad or serpent. Its traditional weaknesses are the odor of a weasel, the crowing of a rooster, and its own reflection. Famous later legends include the Warsaw Basilisk of 1587, said to have killed two children in a cellar before being subdued. The basilisk is referenced in the Latin Vulgate of Psalm 91 and Isaiah, in Leonardo da Vinci's bestiary, in Chaucer, and in Shakespeare's Richard III and Cymbeline."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "From Ancient Greek βασιλίσκος (basilískos), diminutive of βασιλεύς (basileús, 'king'). Latinized as basiliscus and rendered in Latin sources as regulus ('little king'). The crown-like crest or mark on the creature's head is the iconographic anchor of the name.",
+      "meaning": "'Little king' or 'kinglet', from the supposed crown-shaped marking on the creature's head; later interpreted as the king of all serpents.",
+      "first_use": "1st century CE — Pliny the Elder, Naturalis Historia, Book VIII, ch. 33 (78–79 CE)"
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "MYTHOLOGICAL_CREATURE",
-      "type": "Venomous",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Legendary serpent",
+      "subtype": "Venomous reptile / king of serpents",
+      "variant": "Classical (small crowned snake) and Medieval (cockatrice-form)"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "cockatrice", "name": "Cockatrice", "relationship": "counterpart", "description": "Late-medieval rooster-headed serpent often treated as identical to the basilisk" },
+      { "id": "wyvern", "name": "Wyvern", "relationship": "related", "description": "European heraldic two-legged dragon" },
+      { "id": "dragon", "name": "Dragon", "relationship": "related", "description": "Broader category of European serpent-monsters" },
+      { "id": "lamia", "name": "Lamia", "relationship": "related", "description": "Other classical serpentine monster of Greco-Roman tradition" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 0.3, "max": 1.5, "unit": "meters", "confidence": "low" },
+      "coloration": ["pale yellow", "green", "black with white crown-mark"],
+      "features": [
+        { "feature": "Crown-like crest", "description": "A white mark on the head described by Pliny, interpreted as a crown indicating royal status among serpents", "frequency": "always" },
+        { "feature": "Lethal gaze", "description": "Eye contact reputed to kill, sometimes by petrification, in later medieval and Renaissance accounts", "frequency": "common" },
+        { "feature": "Lethal breath / venom", "description": "Breath said to wither plants, crack stone, and kill on contact; Pliny describes a wide trail of venom", "frequency": "always" },
+        { "feature": "Upright movement", "description": "Pliny notes it lifts its forebody from the ground rather than slithering flat", "frequency": "common" },
+        { "feature": "Cockatrice form", "description": "Late-medieval iconography depicts a rooster's head and legs with a serpent's tail", "frequency": "occasional" }
+      ],
+      "morphology": "Two principal forms appear in the literature: (1) the classical basilisk of Pliny — a small crowned snake of North Africa; and (2) the medieval/Renaissance basilisk — often pictorially indistinguishable from the cockatrice, bearing a rooster's head and feet on a serpentine body."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Petrifying gaze", "description": "Eye contact kills or turns the victim to stone; emphasized in medieval bestiaries and later Renaissance literature", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Toxic breath", "description": "Breath kills birds in flight (per Lucan, Pharsalia, IX) and withers vegetation; venom trail leaves the ground barren", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Death by touch transmission", "description": "A horseman striking the basilisk with a lance was said to die through the weapon, the venom traveling up the shaft (Pliny)", "frequency": "occasional", "evidence_level": "folklore" }
+    ],
     "behavior": {
       "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "disposition": "aggressive",
+      "social_structure": "solitary",
+      "habitat_preference": ["desert", "ruins", "wells", "cellars", "rocky terrain"],
+      "diet": "Reported to scorch the ground around its lair; not described as feeding in the manner of natural snakes",
+      "patterns": [
+        "Inhabits arid wastes and abandoned places",
+        "Kills all vegetation around its haunt",
+        "Killed by hearing a rooster crow, smelling a weasel, or seeing its own reflection"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Originally located by Greco-Roman authors in Cyrenaica (modern eastern Libya) and the deserts of North Africa. Medieval European folklore relocated the creature to wells, cellars, and ruins across Europe, with notable later legends in Poland (Warsaw) and Lithuania (Vilnius).",
+      "continents": ["Africa", "Europe"],
+      "countries": ["Libya (ancient Cyrene)", "Italy", "Poland", "Lithuania", "Spain", "United Kingdom"],
+      "regions": ["Cyrenaica", "Mediterranean", "Central Europe", "Cantabria"]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Warsaw, Old Town",
+        "location": {
+          "description": "Cellar in the Old Town of Warsaw associated with the 1587 basilisk legend",
+          "country": "Poland",
+          "region": "Mazovia",
+          "coordinates": { "latitude": 52.2497, "longitude": 21.0122 }
+        },
+        "peak_period": "1587",
+        "notes": "Site of the most famous post-medieval basilisk legend, recorded in 16th-century chronicles"
+      },
+      {
+        "name": "Cyrene",
+        "location": {
+          "description": "Ancient Greek colony in Cyrenaica, modern Shahhat, Libya",
+          "country": "Libya",
+          "region": "Cyrenaica",
+          "coordinates": { "latitude": 32.8199, "longitude": 21.8589 }
+        },
+        "peak_period": "Antiquity",
+        "notes": "Geographic origin of the basilisk in Pliny the Elder's Natural History"
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "0079-01-01",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Pliny the Elder, Naturalis Historia (c. 77–79 CE)"
+      },
+      "peak_activity_periods": [
+        { "period": "1st century CE", "description": "Foundational descriptions in Pliny the Elder and Lucan" },
+        { "period": "12th–15th centuries", "description": "Peak of medieval bestiary tradition; conflation with the cockatrice" },
+        { "period": "16th–17th centuries", "description": "Renaissance and early modern accounts including the Warsaw Basilisk (1587)" }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Greco-Roman natural history. Likely informed by traveler accounts of cobras (whose hooded display can resemble a crown) and by exaggerated reports of desert serpents.",
+      "earliest_accounts": "Pliny the Elder, Naturalis Historia VIII.33 (c. 77–79 CE); enriched by Lucan's Pharsalia IX (c. 65 CE) which lists the basilisk among the serpents born of Medusa's blood in the Libyan desert.",
+      "folklore_connections": "Connected through the medieval bestiary tradition to the cockatrice, the dragon, and the wider European serpent-monster complex. Latin Vulgate translations rendered Hebrew terms in Psalm 91 and Isaiah as basiliscus, embedding the creature in Christian iconography."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "c. 77 CE", "event": "Pliny the Elder describes the basilisk of Cyrene in Naturalis Historia", "significance": "Foundational classical account", "source": "Pliny, Naturalis Historia VIII.33" },
+      { "date": "c. 65 CE", "event": "Lucan's Pharsalia IX lists the basilisk among serpents born of Medusa's blood", "significance": "Cements basilisk as king of serpents in Latin literature", "source": "Lucan, Pharsalia IX" },
+      { "date": "7th century", "event": "Isidore of Seville's Etymologiae transmits and amplifies the basilisk legend", "significance": "Bridge from late antiquity to medieval bestiary tradition", "source": "Isidore, Etymologiae XII.4" },
+      { "date": "12th–13th centuries", "event": "Medieval bestiaries (Aberdeen, Bodleian) depict the basilisk-cockatrice with a rooster's head", "significance": "Iconographic merger with the cockatrice", "source": "Aberdeen Bestiary, c. 1200" },
+      { "date": "1587", "event": "Warsaw Basilisk legend: a basilisk in an Old Town cellar reportedly killed two children, allegedly subdued using mirrors by a condemned man named Johann Faurer", "significance": "Most famous post-medieval basilisk incident", "source": "Smithsonian Magazine (Mike Dash), 'On the Trail of the Warsaw Basilisk'" },
+      { "date": "1597", "event": "Edward Topsell's The Historie of Serpents includes a chapter on the basilisk and cockatrice", "significance": "Last great early-modern English natural history of the creature", "source": "Topsell, The Historie of Serpents (1608)" }
+    ],
+    "modern_era": "The basilisk persists as a literary and pop-culture motif rather than a credible cryptozoological subject. Modern usage ranges from heraldry to fantasy fiction (notably J. K. Rowling's Harry Potter and the Chamber of Secrets, 1998) and tabletop role-playing games. Folklorists treat the basilisk as a paradigmatic case of how classical natural-history error became multi-century legend."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -89,38 +165,144 @@
       "disputed": 0,
       "debunked": 0
     },
-    "notable": [],
+    "notable": [
+      {
+        "id": "basilisk-sighting-1587-warsaw",
+        "name": "Warsaw Basilisk",
+        "date": { "value": "1587-01-01", "precision": "approximate" },
+        "location": {
+          "description": "Cellar of a house in the Old Town of Warsaw",
+          "country": "Poland",
+          "region": "Mazovia",
+          "locality": "Warsaw Old Town",
+          "coordinates": { "latitude": 52.2497, "longitude": 21.0122, "precision": "approximate" }
+        },
+        "witnesses": { "count": 0, "types": ["Folklore tradition recorded in 16th-century Polish chronicles"], "credibility_factors": ["No contemporary forensic record", "Embellished in later printed retellings"] },
+        "description": "According to widely repeated 16th-century accounts, two small girls and a nursemaid died in the cellar of a Warsaw house, their bodies unmarked but darkened. A condemned criminal named Johann Faurer was equipped with a suit of mirrors and lowered into the cellar; he allegedly emerged with the basilisk subdued. The story is the most famous post-medieval European basilisk legend.",
+        "credibility": { "rating": "low", "factors": ["Account is folkloric rather than documentary", "No remains; no contemporary forensic record"], "notes": "Treated by historians as legend rather than verifiable event." },
+        "sources": ["Mike Dash, 'On the Trail of the Warsaw Basilisk', Smithsonian Magazine (2012)"],
+        "featured": true
+      }
+    ],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "basilisk-evidence-pliny",
+        "type": "classical text",
+        "name": "Pliny the Elder, Naturalis Historia VIII.33",
+        "date": "c. 77 CE",
+        "description": "Earliest extant detailed account of the basilisk: a small Cyrenaican snake with a crown-like marking, lethal venom, and a lethal gaze; vulnerable to the weasel.",
+        "status": "unverified",
+        "analysis": "Foundational text. Modern zoological consensus regards the description as a heavily mythologized account of a real venomous snake (most often suggested: Egyptian cobra, Naja haje).",
+        "source": "Pliny the Elder, Naturalis Historia"
+      },
+      {
+        "id": "basilisk-evidence-bestiaries",
+        "type": "medieval manuscript tradition",
+        "name": "Medieval bestiaries (Aberdeen, Bodleian, Ashmole)",
+        "date": "12th–13th centuries",
+        "description": "Illustrated manuscripts depicting the basilisk, often as a rooster-headed serpent, with allegorical Christian commentary.",
+        "status": "unverified",
+        "analysis": "Documents the iconographic and theological merger of basilisk and cockatrice in the European Middle Ages.",
+        "source": "Aberdeen Bestiary (MS 24), c. 1200"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
-    "scientific": [],
-    "skeptical": []
+    "paranormal": [
+      {
+        "name": "King of serpents (folkloric/mythic)",
+        "description": "The basilisk is a real if rare supernatural reptile, the king of serpents, whose powers are inherent to its nature.",
+        "proponents": ["Medieval bestiarists", "Edward Topsell (1608)"],
+        "evidence_cited": ["Pliny's natural history", "Vulgate references", "Continuity of cross-cultural serpent-king motif"]
+      }
+    ],
+    "scientific": [
+      {
+        "name": "Misidentified cobra hypothesis",
+        "description": "Greco-Roman authors describing the basilisk drew on second-hand reports of the Egyptian cobra (Naja haje), whose hooded display resembles a crown and which can spit venom.",
+        "proponents": ["Modern herpetologists", "Laurence Breiner (1979) in Renaissance Quarterly"],
+        "evidence_cited": ["Geographic match (North Africa)", "Crown-like hood of cobra", "Venom and rearing behavior"]
+      },
+      {
+        "name": "Methane / cellar gas explanation (Warsaw legend)",
+        "description": "The Warsaw 1587 deaths may have been caused by accumulated cellar gases (carbon monoxide or methane) in a closed underground space, post-rationalized as a basilisk.",
+        "proponents": ["Mike Dash (2012)"],
+        "evidence_cited": ["Bodies unmarked but darkened", "Cellar setting", "Pattern of deaths in confined underground spaces"]
+      }
+    ],
+    "skeptical": [
+      {
+        "name": "Pure folkloric construct",
+        "description": "The basilisk is a literary and folkloric construct with no zoological referent; its 'evidence' is textual transmission and bestiary illustration, not observation.",
+        "proponents": ["Modern folklorists", "Joyce E. Salisbury, The Beast Within (1994)"],
+        "evidence_cited": ["No physical specimens", "No reliable eyewitness records", "Genre conventions of bestiary literature"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Greco-Roman natural history tradition",
+        "Medieval European bestiary tradition",
+        "Polish urban legend (Warsaw Basilisk)",
+        "Cantabrian regional folklore (Spain)"
+      ],
+      "stories": [
+        "Pliny's account of horseman killed through a lance (Naturalis Historia VIII.33)",
+        "Warsaw Basilisk legend, 1587",
+        "Basilisk of Vilnius (Lithuanian folklore)"
+      ],
+      "beliefs": "Across European tradition, the basilisk symbolizes lethal kingship, hidden death, and the corruption of the gaze; folk remedies (carrying a weasel, a rooster, or a mirror) became proverbial for confronting unconfrontable evil."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "Pliny the Elder, Naturalis Historia (c. 77 CE)",
+        "Lucan, Pharsalia IX (c. 65 CE)",
+        "Geoffrey Chaucer, The Parson's Tale (late 14th c.)",
+        "William Shakespeare, Richard III (c. 1593) and Cymbeline (c. 1611)",
+        "Edward Topsell, The Historie of Serpents (1608)",
+        "J. K. Rowling, Harry Potter and the Chamber of Secrets (1998)"
+      ],
+      "film_tv": [
+        "Harry Potter and the Chamber of Secrets (2002, dir. Chris Columbus)"
+      ],
+      "games": [
+        "Dungeons & Dragons (TSR/Wizards of the Coast)",
+        "The Witcher series (CD Projekt Red)"
+      ],
+      "other": [
+        "Heraldry: basilisk featured on multiple European municipal arms",
+        "Public symbol of Basel, Switzerland (folk-etymological link to Basilisk)"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
+    "researchers": [
+      { "name": "Mike Dash", "affiliation": "Independent historian", "contribution": "Detailed historical investigation of the Warsaw Basilisk legend (Smithsonian Magazine, 2012)", "period": "2010s" },
+      { "name": "Laurence Breiner", "affiliation": "Boston University", "contribution": "Scholarship on the basilisk's literary career through the Renaissance", "period": "1979" }
+    ],
     "organizations": [],
-    "ongoing_studies": "None documented"
+    "ongoing_studies": "The basilisk is studied as a literary/folkloric subject in classical reception, medieval studies, and the history of natural history rather than as a cryptozoological candidate."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wiki-basilisk", "type": "website", "title": "Basilisk", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Basilisk", "accessed": "2026-05-07" },
+    { "id": "smithsonian-warsaw", "type": "article", "title": "On the Trail of the Warsaw Basilisk", "authors": ["Mike Dash"], "publication": "Smithsonian Magazine", "date": "2012-07-23", "url": "https://www.smithsonianmag.com/history/on-the-trail-of-the-warsaw-basilisk-5691840/", "accessed": "2026-05-07" },
+    { "id": "theoi-basiliskos", "type": "website", "title": "Basiliskos — Deadly Serpent of Greek & Roman Legend", "publication": "Theoi Project", "url": "https://www.theoi.com/Thaumasios/Basiliskoi.html", "accessed": "2026-05-07" },
+    { "id": "pliny-natural-history", "type": "book", "title": "Naturalis Historia (Natural History), Book VIII", "authors": ["Pliny the Elder"], "date": "c. 77 CE" },
+    { "id": "topsell-1608", "type": "book", "title": "The Historie of Serpents", "authors": ["Edward Topsell"], "publication": "William Jaggard", "date": "1608" },
+    { "id": "breiner-1979", "type": "paper", "title": "The Career of the Cockatrice", "authors": ["Laurence A. Breiner"], "publication": "Isis", "date": "1979" }
+  ]
 }
